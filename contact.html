@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact us</title>
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">
+
+    <!-- Custom Styles -->
+    <style>
+    body {
+        background-image: linear-gradient(45deg, #864ef2, #6755F4);
+    }
+    .uf-contact-form-01 {
+        max-width: 900px;
+    }
+    @media (min-width: 576px)
+        .uf-contact-form-01 {
+            min-height: 100vh;
+            align-content: center;
+        }
+    }
+    .uf-img-contact-form-01 {
+        max-width: 100%;
+        animation: uf-animation 4s ease-in-out 1s infinite alternate;
+        position: relative;
+    }
+    .uf-ct-01-text-primary {
+        color: #864ef2;
+    }
+    .uf-ct-01-btn-primary {
+        background-color: #864ef2;
+        color: #fff;
+    }
+    .uf-ct-01-btn-primary:hover {
+        background-color: #641eec;
+        color: #fff;
+    }
+    @keyframes uf-animation {
+        0% { top: 0px; }
+        50% { top: -30px; }
+        100% { top: 0px; }
+    }
+    .form-control:focus {
+        border-color: #a979ff;
+        box-shadow: 0 0 0 .25rem rgb(103 58 183 / 21%);
+    }
+    </style>
+
+</head>
+<body>
+    <section class="uf-contact-form-01 mx-auto">
+        <div class="container">
+            <div class="row justify-content-center bg-white rounded-4 shadow py-5 gx-5 px-lg-5">
+                <div class="col-md-6 text-center">
+                    <h2 class="uf-ct-01-text-primary text-uppercase fw-bold">Contact Us</h2>
+                    <p>Or reach out manually to <a href="mailto:uifresh.net@gmail.com" class="text-decoration-none">uifresh.net@gmail.com</a></p>
+                <img src="plane.png"alt="" class="uf-img-contact-form-01 pt-4 d-md-block d-none">
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="uf-imail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="uf-imail" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text uf-ct-01-text-primary">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="uf-iname" class="form-label">Your name</label>
+                            <input type="text" class="form-control" id="uf-iname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="uf-itextarea" class="form-label">Your message</label>
+                            <textarea class="form-control" id="uf-itextarea" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-lg uf-ct-01-btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+</body>
+</html>
